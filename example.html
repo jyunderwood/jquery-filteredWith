@@ -1,0 +1,97 @@
+<html>
+<head>
+  <title>jquery.filteredwith.js</title>
+</head>
+<body>
+
+<select name="makes" id="makes">
+  <option value="">All Makes</option>
+  <option value="2">BMW</option>
+  <option value="5">Chevrolet</option>
+  <option value="6">Chrysler</option>
+  <option value="7">Dodge</option>
+</select>
+
+<select name="models" id="models">
+  <option value="">All Models</option>
+
+  <optgroup label="BMW">
+    <option value="116">3-Series</option>
+    <option value="213">3-Series Sport Wagon</option>
+    <option value="233">5-Series</option>
+    <option value="85">X3</option>
+    <option value="186">X5</option>
+  </optgroup>
+
+  <optgroup label="Chevrolet">
+    <option value="173">Avalanche</option>
+    <option value="115">Aveo</option>
+    <option value="146">Aveo5</option>
+    <option value="167">Blazer</option>
+    <option value="81">Camaro</option>
+    <option value="178">Cavalier</option>
+    <option value="202">C/K 1500</option>
+    <option value="49">Cobalt</option>
+    <option value="135">Colorado</option>
+    <option value="149">Corvette</option>
+    <option value="50">Cruze</option>
+    <option value="121">Equinox</option>
+    <option value="240">Express</option>
+    <option value="8">HHR</option>
+    <option value="4">Impala</option>
+    <option value="228">Lumina</option>
+    <option value="28">Malibu</option>
+    <option value="154">Malibu Classic</option>
+    <option value="210">Malibu MAXX</option>
+    <option value="217">Monte Carlo</option>
+    <option value="158">S10 Blazer</option>
+    <option value="185">S10 Pickup</option>
+    <option value="9">Silverado 1500</option>
+    <option value="67">Silverado Classic 1500</option>
+    <option value="197">Sonic</option>
+    <option value="143">Suburban</option>
+    <option value="92">Tahoe</option>
+    <option value="163">Tracker</option>
+    <option value="84">TrailBlazer</option>
+    <option value="237">Traverse</option>
+    <option value="134">Uplander</option>
+  </optgroup>
+
+  <optgroup label="Chrysler">
+    <option value="60">200</option>
+    <option value="39">300</option>
+    <option value="222">300M</option>
+    <option value="136">Aspen</option>
+    <option value="226">Cirrus</option>
+    <option value="179">Pacifica</option>
+    <option value="70">PT Cruiser</option>
+    <option value="3">Sebring</option>
+    <option value="130">Town &amp; Country</option>
+  </optgroup>
+
+  <optgroup label="Dodge">
+    <option value="6">Avenger</option>
+    <option value="35">Caliber</option>
+    <option value="80">Challenger</option>
+    <option value="45">Charger</option>
+    <option value="209">D150</option>
+    <option value="82">Durango</option>
+    <option value="47">Grand Caravan</option>
+    <option value="55">Journey</option>
+    <option value="239">Magnum</option>
+    <option value="205">Neon</option>
+    <option value="93">Nitro</option>
+    <option value="78">Ram 1500</option>
+    <option value="181">Ram 2500</option>
+    <option value="177">Stratus</option>
+  </optgroup>
+</select>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="jquery.filteredwith.js"></script>
+
+<script>
+  $('#models').filteredWith('#makes', { subText: 'All models for this make' });
+</script>
+</body>
+</html>
