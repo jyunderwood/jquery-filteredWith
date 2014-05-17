@@ -6,11 +6,11 @@
  *
  * Licensed under the MIT license
  *
- * Version: 1.0.0
+ * Version: 1.0.1
  *
  */
 
-;(function($) {
+;(function($, window, document, undefined) {
   "use strict";
 
   $.fn.filteredWith = function(filteringSelect, options) {
@@ -40,4 +40,4 @@
   $.fn.filteredWith.defaults = {
     subText: '--'
   };
-})(jQuery);
+})(jQuery, window, document);

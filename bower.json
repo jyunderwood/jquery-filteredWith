@@ -1,0 +1,23 @@
+{
+  "name": "jquery-filteredWith",
+  "version": "1.0.1",
+  "homepage": "https://github.com/jyunderwood/jquery-filteredWith",
+  "authors": [
+    "Jonathan Underwood <jonathan@jyunderwood.com>"
+  ],
+  "description": "A jQuery plugin that filters a select element from the selected item of another select element.",
+  "main": "filteredwith.jquery.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tests",
+    "example.html",
+    "filteredwith.jquery.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "jquery": ">=1.4"
+  }
+}

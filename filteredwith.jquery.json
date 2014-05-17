@@ -1,8 +1,8 @@
 {
   "name": "filteredWith",
   "title": "filteredWith",
-  "description": "Allows filtering a select element from another select element",
-  "version": "1.0.0",
+  "description": "Filters a select element from the selected item of another select element.",
+  "version": "1.0.1",
   "homepage": "https://github.com/jyunderwood/jquery-filteredWith",
   "author": {
     "name": "Jonathan Underwood",
