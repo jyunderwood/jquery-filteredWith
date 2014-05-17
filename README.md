@@ -1,34 +1,36 @@
-# jquery.filteredWith.js
+# filteredWith
 
-Allows filtering a `select` element based on another `select` element.
+A jQuery plugin that allows filtering a `select` element from another `select` element.
 
 ## Usage
 
-filterWith matches the optgroup label of the `select` to be filtered with the text of the `select` that it's filtered with.
+filteredWith matches the `optgroup` label of a `select` element with the display text of another `select` element in order to filter it.
 
-    <select name="makes" id="makes">
-      <option value="">All Makes</option>
-      <option value="2">BMW</option>
-      <option value="2">Chevrolet</option>
-    </select>
+```html
+<select name="makes" id="makes">
+  <option value="">All Makes</option>
+  <option value="2">BMW</option>
+  <option value="2">Chevrolet</option>
+</select>
 
-    <select name="models" id="models">
-      <option value="">All Models</option>
+<select name="models" id="models">
+  <option value="">All Models</option>
 
-      <optgroup label="BMW">
-        <option value="116">1-Series</option>
-        <option value="233">3-Series</option>
-      </optgroup>
+  <optgroup label="BMW">
+    <option value="116">1-Series</option>
+    <option value="233">3-Series</option>
+  </optgroup>
 
-      <optgroup label="Chevrolet">
-        <option value="173">Avalanche</option>
-        <option value="115">Aveo</option>
-      </optgroup>
-    </select>
+  <optgroup label="Chevrolet">
+    <option value="173">Avalanche</option>
+    <option value="115">Aveo</option>
+  </optgroup>
+</select>
 
-    <script>
-      $('#models').filteredWith('#makes', subText: 'All Models for Make');
-    </script>
+<script>
+  $('#models').filteredWith('#makes', subText: 'All Models for Make');
+</script>
+```
 
 ## Contributing
 

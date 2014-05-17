@@ -2,11 +2,11 @@
  * filteredWith
  * Allows filtering a select element based on another select element.
  *
- * Copyright (c) 2013 Jonathan Underwood
+ * Copyright (c) 2014 Jonathan Underwood
  *
  * Licensed under the MIT license
  *
- * Version: 0.1.0
+ * Version: 1.0.0
  *
  */
 
