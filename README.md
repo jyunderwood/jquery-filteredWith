@@ -1,19 +1,19 @@
 # filteredWith
 
-A jQuery plugin that allows filtering a `select` element from another `select` element.
+A jQuery plugin that filters a `select` element from the selected item of another `select` element.
 
 ## Usage
 
 filteredWith matches the `optgroup` label of a `select` element with the display text of another `select` element in order to filter it.
 
 ```html
-<select name="makes" id="makes">
+<select name="make_id" id="makes">
   <option value="">All Makes</option>
   <option value="2">BMW</option>
   <option value="2">Chevrolet</option>
 </select>
 
-<select name="models" id="models">
+<select name="model_id" id="models">
   <option value="">All Models</option>
 
   <optgroup label="BMW">

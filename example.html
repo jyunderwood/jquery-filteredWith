@@ -4,7 +4,7 @@
 </head>
 <body>
 
-<select name="makes" id="makes">
+<select name="make_id" id="makes">
   <option value="">All Makes</option>
   <option value="2">BMW</option>
   <option value="5">Chevrolet</option>
@@ -12,7 +12,7 @@
   <option value="7">Dodge</option>
 </select>
 
-<select name="models" id="models">
+<select name="model_id" id="models">
   <option value="">All Models</option>
 
   <optgroup label="BMW">
@@ -88,7 +88,7 @@
 </select>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script src="filteredwith.jquery.js"></script>
+<script src="./filteredwith.jquery.js"></script>
 
 <script>
   $('#models').filteredWith('#makes', { subText: 'All models for this make' });
