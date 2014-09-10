@@ -15,9 +15,13 @@
     "tests",
     "example.html",
     "filteredwith.jquery.json",
-    "README.md"
+    "README.md",
+    "test"
   ],
   "dependencies": {
     "jquery": ">=1.4"
-  }
+  },
+  "moduleType": [
+    "globals"
+  ]
 }
